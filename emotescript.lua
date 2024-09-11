@@ -85,3 +85,25 @@ local Slider = AddSlider(Main, {
     função do controle deslizante
   end
 ]]
+
+local Slider = AddSlider(Main, {
+  Name = "Slider jump ",
+  MinValue = 10,
+  MaxValue = 100,
+  Default = 50,
+  Increase = 1,
+  Callback = function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+  end
+})
+
+--[[
+  Name = "Slider walkspeed" <string> nome do controle deslizante
+  MinValue = 10 <number> valor minimo
+  MaxValue = 100 <number> valor maximo
+  Default = 25 <number> valor padrão
+  Increase = 1 <number> valor que almenta de acordo com a posição do 
+  Callback = function(Value)
+    função do controle deslizante
+  end
+]]
