@@ -15,7 +15,7 @@ task.spawn(function()
         ImageButton.BackgroundColor3 = Color3.fromRGB(105,105,105);
         ImageButton.BackgroundTransparency = 0.8
         ImageButton.Position = UDim2.new(0.9,0,0.1,0);
-        ImageButton.Size = UDim2.new(0,50,0,50);
+        ImageButton.Size = UDim2.new(0, 37, 0, 39);
         ImageButton.Image = getgenv().Image;
         ImageButton.Draggable = true;
         ImageButton.Transparency = 1;
