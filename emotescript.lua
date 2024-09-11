@@ -40,6 +40,19 @@ MakeWindow({
   }
 ]]
 
+MakeNotifi({
+  Title = "what",
+  Text = "Notificação teste",
+  Time = 5
+})
+
+--[[
+  Title = "REDz HUB" <string> titulo da notificação
+  Text = "Notificação teste" <string> descrição da notificação
+  Time = 5 <number> tempo da notificação
+]]
+
+
 local Main = MakeTab({Name = "Main"})
 
 --[[
@@ -55,10 +68,10 @@ local Slider = AddSlider(Main, {
   Name = "Slider walkspeed ",
   MinValue = 10,
   MaxValue = 100,
-  Default = 25,
+  Default = 16,
   Increase = 1,
   Callback = function(Value)
-    
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
   end
 })
 
